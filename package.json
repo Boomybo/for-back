@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@reduxjs/toolkit": "^1.8.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.16.13",
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
     "node-sass": "^7.0.1",
@@ -49,6 +51,18 @@
       "last 1 safari version"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "npm run format",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
     "babel-eslint": "^10.1.0",
@@ -61,6 +75,8 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "eslint-plugin-react-redux": "^4.0.0",
+    "husky": "^4.0.0",
+    "lint-staged": "^13.0.0",
     "prettier": "^2.6.2"
   }
 }

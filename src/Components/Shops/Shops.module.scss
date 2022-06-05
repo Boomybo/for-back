@@ -1,0 +1,25 @@
+.wrapper_shops {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+.shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 170px;
+  height: 200px;
+  img {
+    width: inherit;
+    height: 150px;
+    object-fit: cover;
+  }
+}
+.title {
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -1,0 +1,28 @@
+.logo svg {
+  cursor: pointer;
+  width: 38%;
+}
+.menu {
+  max-width: 100%;
+  padding: 0 2% 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px #f0f1f2;
+  &_item {
+    font-size: 19px;
+    font-weight: 400;
+    cursor: pointer;
+    a {
+      &:hover {
+        color: #ff6163;
+      }
+    }
+  }
+}
+.wrapper {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
