@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 
-import showcaseReducer from './showcaseSlice'
+import showcaseSlice from './showcaseSlice'
 
-const rootReducer = combineReducers({ showcase: showcaseReducer })
+const rootReducer = combineReducers({ showcase: showcaseSlice })
 
 export function createStore() {
   return configureStore({

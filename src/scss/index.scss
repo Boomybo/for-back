@@ -17,3 +17,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.plus {
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+  max-width: 1010px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.divider {
+  margin: 0 0 16px !important;
+  padding-top: 7px;
+}

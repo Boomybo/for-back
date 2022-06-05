@@ -4,7 +4,9 @@ import { Provider } from 'react-redux'
 
 import { createStore } from './Redux/store'
 import App from './Components/App/App'
+
 import './scss/index.scss'
+import 'antd/dist/antd.min.css'
 
 const store = createStore()
 const root = ReactDOM.createRoot(document.getElementById('root'))
