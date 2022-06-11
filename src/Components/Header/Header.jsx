@@ -67,6 +67,9 @@ const Header = () => {
                 Корзина
               </Link>
             </div>
+            <div className={styles.menu_item}>
+              <Link to="/login">Войти</Link>
+            </div>
           </div>
         </div>
       </header>
