@@ -13,12 +13,10 @@ const Products = () => {
   ))
   return (
     <>
-      <div className="container">
-        <Divider orientation="center" className="divider">
-          Все Товары
-        </Divider>
-        <div className={styles.wrapper_cards}>{contentCard}</div>
-      </div>
+      <Divider orientation="center" className="divider">
+        Все Товары
+      </Divider>
+      <div className={styles.wrapper_cards}>{contentCard}</div>
     </>
   )
 }
