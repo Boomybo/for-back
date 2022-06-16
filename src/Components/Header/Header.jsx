@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import styles from './Header.module.scss'
 const Header = () => {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <header>
         <div className={styles.menu} mode="horizontal">
           <div>
