@@ -28,7 +28,8 @@
   }
 }
 .wrapper {
-  width: 600px;
+  max-width: 700px;
+  min-width: 650px;
   display: flex;
   justify-content: space-between;
 }
