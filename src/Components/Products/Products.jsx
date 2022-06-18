@@ -4,21 +4,19 @@ import { useSelector } from 'react-redux'
 
 import CardItem from './CardItem'
 import styles from './Products.module.scss'
+const getShowCase = (state) => state.showcase
 
 const Products = () => {
-  const { products } = useSelector((state) => state.showcase)
-  console.log(products)
+  const { products } = useSelector(getShowCase)
   const contentCard = products?.map((item) => (
     <CardItem key={item.id} {...item} />
   ))
   return (
     <>
-      <div className="container">
-        <Divider orientation="center" className="divider">
-          Все Товары
-        </Divider>
-        <div className={styles.wrapper_cards}>{contentCard}</div>
-      </div>
+      <Divider orientation="center" className="divider">
+        Все Товары
+      </Divider>
+      <div className={styles.wrapper_cards}>{contentCard}</div>
     </>
   )
 }
