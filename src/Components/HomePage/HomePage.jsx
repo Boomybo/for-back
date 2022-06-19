@@ -9,7 +9,7 @@ import styles from './HomePage.module.scss'
 const optimizer = (state) => state.showcase
 
 const HomePage = () => {
-  const { products, shopsArr } = useSelector((state) => optimizer(state))
+  const { products, shopsArr } = useSelector(optimizer)
 
   return (
     <main className={styles['main-container']}>

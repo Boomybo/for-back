@@ -6,14 +6,15 @@ import styles from './HomePage.module.scss'
 const optimizer = (state) => state.showcase
 
 const HomePageCards = ({ props }) => {
-  const { products, shopsArr } = useSelector((state) => optimizer(state))
+  const { products, shopsArr } = useSelector(optimizer)
   const propsArray = props ? products : shopsArr
   const imgSrc = props
     ? 'https://89.img.avito.st/image/1/1.QBjw4ba27PHmQVbx_JhvbSNC7PtO4u1LRELu.9RjV_laMFNM_G6y2KkxCh6SP4T8yHEDYGlYXKl0Fhzs'
     : 'https://s3-symbol-logo.tradingview.com/m-video--600.png'
+  const popularShopsAndProducts = 4
 
   return propsArray.map((product, index) => {
-    if (index < 4) {
+    if (index < popularShopsAndProducts) {
       return (
         <div className={styles['product-card']} key={index}>
           <img
